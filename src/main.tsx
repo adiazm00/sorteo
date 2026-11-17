@@ -1,5 +1,6 @@
 import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
+import logoUrl from '../img/logo_res.webp'
 import './main.css'
 
 function App() {
@@ -48,10 +49,13 @@ function App() {
     <main className="app-shell">
       <section className="draw-card" aria-labelledby="draw-title">
         <header className="header">
-          <img className="logo" src="../img/logo_res.webp" alt="Escudo de San Pablo F.S." />
+          <img className="logo" src={logoUrl} alt="Escudo de San Pablo F.S." />
           <div>
             <p className="eyebrow">Sorteo oficial</p>
-            <h1 id="draw-title">Papeletas San Pablo F.S.</h1>
+            <div className="title-container">
+              <h1 id="draw-title">Papeletas </h1>
+              <h1 id="draw-title">San Pablo F.S.</h1>
+            </div>
           </div>
         </header>
 
