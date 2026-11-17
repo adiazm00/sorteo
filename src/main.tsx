@@ -1,6 +1,6 @@
 import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import logoUrl from '../img/logo_res.webp'
+import logoUrl from '../public/logo_res.webp'
 import './main.css'
 
 function App() {
@@ -61,9 +61,11 @@ function App() {
 
         <div className="main-container">
           <div className="limit-grid">
-            <label>
+            <label htmlFor="minimum">
               Primer número
               <input
+                id="minimum"
+                name="minimum"
                 type="number"
                 min="0"
                 max="10000"
@@ -76,9 +78,11 @@ function App() {
               -
             </span>
 
-            <label>
+            <label htmlFor="maximum">
               Último número
               <input
+                id="maximum"
+                name="maximum"
                 type="number"
                 min="0"
                 max="10000"
